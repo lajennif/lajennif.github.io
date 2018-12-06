@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Jennifer La's Portfolio Page</title>
 </head>
 
+ <!-- Navigation Bar -->
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="javascript:void();">Profile</a>
+    <a class="navbar-brand" style="font-size:35px;" href="javascript:void(0);">Profile</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,28 +26,86 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" href="#Skills">Skills</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
       </ul>
     </div>
   </nav>
-  <div class="container" id="about">
-    <h1>About me</h1>
-    <p>Here are some of the things I like to eat and do and see.</p>
+  <!--Scroll button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+  
+  <!--About section-->
+  <div class="container mt-50" id="about">
+    <h2>About</h2>
+    <img src="Assets/Seafood.jpg" alt="Seafood image">
+    <p class="about">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout.</p>
   </div>
 
-  <div class="container mt-500" id="Skills">
-    <ul>
-      <li>Eating</li>
-      <li>Sleeping</li>
-      <li>Traveling</li>
-      <li>Planning</li>
-      <li>Carpentry</li>
-    </ul>
+<!--Skills section-->
+  <div class="container mt-50" id="Skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+      </ul>
+      <img src="Assets/CodingSkills.png">
+    </div>
+
+    <!--Experience section-->
+  <div class="container mt-50"  id="experience">
+    <h2>Experience</h2>
+      <p>Lorem ipsum dolor sit amet, pri an vero atqui laoreet, sit civibus omittam molestie ne, veritus tacimates vis et. Ex vivendo pertinax sed, pro ad iusto option meliore. Mei et semper delicata, at affert accusam nec. Ius errem argumentum signiferumque ex, sea ei aeque voluptaria rationibus.
+          Ea quo ancillae prodesset, iudico fuisset delectus ad vel. Diceret vocibus repudiandae mei id, duo ne alia nominati scribentur. An gubergren omittantur neglegentur vel. Pro accusata voluptatum in.
+          Mel cu illum utamur, quo stet libris no, eu quando impedit nominavi ius. Te vel liber persecuti. Omnis volutpat persequeris eu vim, pertinacia intellegebat te vim, ne salutandi persequeris pro. Suavitate ullamcorper ea vix.
+          Has nulla melius no. Eu elitr ignota possim per, nam modo choro disputationi ne, vim ad summo tollit urbanitas. Elit appetere eam at. Usu ei impedit elaboraret. Eu falli tamquam nam.</p>
   </div>
+
+   <!--Hobbies section-->
+    <div class="container mt-50"  id="hobbies">
+      
+       <!-- Slideshow container -->
+       <h2>Hobbies</h2>
+       <p>Loving my husband.</p>
+       
+       <div class="slideshow-container">
+       
+       <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+         <img src="Assets/WeddingJenis.jpg" style="width:100%">
+         <div class="text">Wedding 1</div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+         <img src="Assets/Website-672kk.jpg" style="width:100%">
+         <div class="text">Wedding Two</div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 3</div>
+         <img src="Assets/Website-465.jpg" style="width:100%">
+         <div class="text">Wedding 3</div>
+       </div>
+       
+       </div>
+       <br>
+       
+       <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+       
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
